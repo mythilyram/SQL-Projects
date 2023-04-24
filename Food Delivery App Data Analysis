@@ -1,12 +1,13 @@
-************************task1*************************
-#For a high-level overview of the hotels, provide the top 5 most voted hotels in the delivery category.
+ # Task 1
+ ## For a high-level overview of the hotels, provide the top 5 most voted hotels in the delivery category.
 
+'''sql
 Select name,votes,rating
 from zomato
 where type = 'delivery'
 order by votes desc
 limit 5
-
+'''
 ***********************task2**********************
 #write your query
 #The rating of a hotel is a key identifier in determining a restaurant’s performance.
